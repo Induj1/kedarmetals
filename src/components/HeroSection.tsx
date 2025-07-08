@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Star, Shield, Truck, Award } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -42,6 +41,11 @@ const HeroSection = () => {
           <h2 className="text-3xl md:text-5xl font-semibold text-ivory/90 mb-6 font-serif drop-shadow-xl">
             Tradition That Lasts Generations
           </h2>
+          <div className="mb-8">
+            <p className="text-xl md:text-2xl text-ivory font-semibold bg-maroon/70 rounded-xl px-6 py-3 inline-block shadow-lg">
+              Pure Copper, Brass & Steel Utensils — Delivered Across Sitapur and Beyond.
+            </p>
+          </div>
           
           {/* Subtitle with enhanced styling */}
           <div className="bg-ivory/90 rounded-2xl p-8 mb-8 max-w-5xl mx-auto backdrop-blur-md shadow-2xl border-2 border-brass/30">
@@ -62,9 +66,9 @@ const HeroSection = () => {
           
           {/* CTA buttons with enhanced design */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <Link to="/copper-collection">
+            <Link to="/brass-essentials">
               <Button size="lg" className="heritage-button px-12 py-6 text-xl shadow-2xl text-2xl font-bold">
-                खरीदारी करें • Shop Now
+                🛒 Shop Now
               </Button>
             </Link>
             <Link to="/gift-sets">
