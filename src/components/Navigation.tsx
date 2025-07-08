@@ -33,9 +33,9 @@ const Navigation = () => {
       {/* Main navigation */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo section */}
+          {/* Logo section (desktop only) */}
           <Link to="/" className="flex items-center space-x-4">
-            <img src={logo} alt="Kedar Metals Logo" className="w-20 h-20 object-contain bg-white border border-gray-200 shadow-lg" />
+            <img src={logo} alt="Kedar Metals Logo" className="w-20 h-20 object-contain bg-white border border-gray-200 shadow-lg hidden lg:block" />
           </Link>
           
           {/* Desktop navigation */}
@@ -101,12 +101,9 @@ const Navigation = () => {
           <div className="fixed inset-0 bg-black/40" onClick={() => setSidebarOpen(false)}></div>
           {/* Sidebar */}
           <div className="relative bg-white w-64 max-w-full h-full shadow-xl p-6 flex flex-col">
-            <button className="absolute top-4 right-4 text-maroon" onClick={() => setSidebarOpen(false)}>
+            <button className="absolute top-4 right-4 text-maroon" onClick={() => setSidebarOpen(false)} aria-label="Close sidebar">
               <X className="w-6 h-6" />
             </button>
-            <div className="mb-8">
-              <img src={logo} alt="Kedar Metals Logo" className="w-16 h-16 object-contain mx-auto mb-4" />
-            </div>
             <nav className="flex flex-col space-y-4">
               <Link to="/" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Home</Link>
               <Link to="/copper-collection" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Copper Collection</Link>
