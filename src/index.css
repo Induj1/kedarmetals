@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enhanced Indian-inspired design system */
+@layer base {
+  :root {
+    --background: 45 15% 98%; /* Warm ivory white */
+    --foreground: 0 0% 0%; /* Pure black text */
+
+    --card: 45 15% 99%;
+    --card-foreground: 0 0% 0%; /* Pure black text */
+
+    --popover: 45 15% 99%;
+    --popover-foreground: 0 0% 0%; /* Pure black text */
+
+    --primary: 0 65% 35%; /* Deep maroon */
+    --primary-foreground: 0 0% 100%; /* Pure white for primary buttons */
+
+    --secondary: 43 85% 50%; /* Rich brass gold */
+    --secondary-foreground: 0 0% 0%; /* Pure black text */
+
+    --muted: 45 10% 95%;
+    --muted-foreground: 0 0% 20%; /* Dark gray for muted text */
+
+    --accent: 43 85% 50%; /* Brass gold */
+    --accent-foreground: 0 0% 0%; /* Pure black text */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 43 30% 85%;
+    --input: 45 10% 92%;
+    --ring: 43 85% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom heritage colors - using proper HSL values */
+    --maroon: 0 65% 35%;
+    --brass: 43 85% 50%;
+    --copper: 25 85% 55%;
+    --ivory: 45 15% 98%;
+    --warm-gold: 43 75% 60%;
+    --terracotta: 15 60% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+  }
+
+  /* Enhanced traditional patterns and backgrounds */
+  .heritage-pattern {
+    background-image: 
+      radial-gradient(circle at 25px 25px, rgba(180, 142, 35, 0.1) 2px, transparent 2px),
+      radial-gradient(circle at 75px 75px, rgba(139, 69, 19, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px, 100px 100px;
+  }
+
+  .mandala-border {
+    background: 
+      linear-gradient(45deg, transparent 30%, rgba(180, 142, 35, 0.3) 30%, rgba(180, 142, 35, 0.3) 35%, transparent 35%),
+      linear-gradient(-45deg, transparent 30%, rgba(180, 142, 35, 0.3) 30%, rgba(180, 142, 35, 0.3) 35%, transparent 35%);
+    background-size: 12px 12px;
+  }
+
+  .rangoli-pattern {
+    background: 
+      conic-gradient(from 0deg at 50% 50%, 
+        rgba(180, 142, 35, 0.1) 0deg, 
+        transparent 90deg, 
+        rgba(139, 69, 19, 0.05) 180deg, 
+        transparent 270deg);
+  }
+
+  /* Premium gradients */
+  .brass-gradient {
+    background: linear-gradient(135deg, 
+      hsl(43 85% 50%) 0%, 
+      hsl(43 75% 60%) 50%, 
+      hsl(43 85% 50%) 100%);
+  }
+
+  .maroon-gradient {
+    background: linear-gradient(135deg, 
+      hsl(0 65% 35%) 0%, 
+      hsl(0 70% 40%) 50%, 
+      hsl(0 65% 35%) 100%);
+  }
+
+  .copper-gradient {
+    background: linear-gradient(135deg, 
+      hsl(25 85% 55%) 0%, 
+      hsl(25 90% 60%) 50%, 
+      hsl(25 85% 55%) 100%);
+  }
+
+  .heritage-gradient {
+    background: linear-gradient(135deg, 
+      hsl(45 15% 98%) 0%, 
+      hsl(45 20% 96%) 50%, 
+      hsl(45 15% 98%) 100%);
+  }
+
+  /* Enhanced animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(180, 142, 35, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(180, 142, 35, 0.6), 0 0 30px rgba(180, 142, 35, 0.3); }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+  }
+
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .glow-animation {
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  .shimmer-effect {
+    background: linear-gradient(90deg, transparent, rgba(180, 142, 35, 0.2), transparent);
+    background-size: 1000px 100%;
+    animation: shimmer 2s ease-in-out infinite;
+  }
+
+  /* Traditional decorative elements */
+  .kalash-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, 
+      transparent, 
+      hsl(43 85% 50%), 
+      hsl(0 65% 35%), 
+      hsl(43 85% 50%), 
+      transparent);
+  }
+
+  .traditional-card {
+    position: relative;
+    border: 2px solid rgba(180, 142, 35, 0.2);
+    border-radius: var(--radius);
+    background: hsl(45 15% 98%);
+    box-shadow: 
+      0 4px 20px rgba(139, 69, 19, 0.1),
+      inset 0 1px 0 rgba(180, 142, 35, 0.1);
+  }
+
+  .traditional-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+      rgba(180, 142, 35, 0.3), 
+      rgba(139, 69, 19, 0.3), 
+      rgba(180, 142, 35, 0.3));
+    border-radius: var(--radius);
+    z-index: -1;
+  }
+
+  /* Enhanced button styles */
+  .heritage-button {
+    background: linear-gradient(135deg, 
+      hsl(0 65% 35%) 0%, 
+      hsl(0 70% 40%) 50%, 
+      hsl(0 65% 35%) 100%);
+    border: 2px solid rgba(180, 142, 35, 0.3);
+    color: hsl(45 15% 98%);
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .heritage-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      transparent, 
+      rgba(180, 142, 35, 0.2), 
+      transparent);
+    transition: left 0.5s;
+  }
+
+  .heritage-button:hover::before {
+    left: 100%;
+  }
+
+  .heritage-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3);
+    border-color: hsl(43 85% 50%);
+  }
+
+  /* Responsive enhancements */
+  @media (max-width: 768px) {
+    .heritage-pattern {
+      background-size: 30px 30px, 60px 60px;
+    }
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--brass));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--maroon));
+}
