@@ -18,6 +18,10 @@ import brassDiya from "@/assets/products/brass diya.jpg";
 import brassBell from "@/assets/products/brass bell.jpg";
 
 import steelTiffin from "@/assets/products/steel tiffin.jpg";
+import steelCasserole from "@/assets/products/steel casserole.jpg";
+import steelMultiKadai from "@/assets/products/Stell Multi Kadai.jpg";
+import steelMomoIdliDhoklaMaker from "@/assets/products/steel Momo Idli Dhokla maker.jpg";
+import steelMasalaDabba from "@/assets/products/steel masala dabba.jpg";
 
 const productsData = [
   {
@@ -217,6 +221,50 @@ const productsData = [
     rating: 4.5,
     reviews: 80,
     features: ["Multi Compartment", "Durable Steel", "Easy Carry"]
+  },
+  {
+    name: "Steel Casserole",
+    hindiName: "स्टील कैसरोल",
+    image: steelCasserole,
+    price: 899,
+    originalPrice: 1199,
+    discount: "25% OFF",
+    rating: 4.4,
+    reviews: 65,
+    features: ["Large Capacity", "Durable Steel", "Heat Resistant"]
+  },
+  {
+    name: "Steel Multi Kadai",
+    hindiName: "स्टील मल्टी कड़ाई",
+    image: steelMultiKadai,
+    price: 1299,
+    originalPrice: 1699,
+    discount: "24% OFF",
+    rating: 4.6,
+    reviews: 95,
+    features: ["Multi Purpose", "Durable Steel", "Non-Stick Coating"]
+  },
+  {
+    name: "Steel Momo Idli Dhokla Maker",
+    hindiName: "स्टील मोमो इडली ढोकला मेकर",
+    image: steelMomoIdliDhoklaMaker,
+    price: 799,
+    originalPrice: 999,
+    discount: "20% OFF",
+    rating: 4.3,
+    reviews: 45,
+    features: ["Multi Purpose", "Steam Cooking", "Easy to Use"]
+  },
+  {
+    name: "Steel Masala Dabba",
+    hindiName: "स्टील मसाला डब्बा",
+    image: steelMasalaDabba,
+    price: 649,
+    originalPrice: 849,
+    discount: "24% OFF",
+    rating: 4.5,
+    reviews: 75,
+    features: ["7 Compartments", "Airtight", "Organized Storage"]
   }
 ];
 

@@ -56,10 +56,10 @@ const Navigation = () => {
               Steel Essentials
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brass transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link to="/gift-sets" className="text-foreground hover:text-primary transition-colors font-medium relative group">
+            {/* <Link to="/gift-sets" className="text-foreground hover:text-primary transition-colors font-medium relative group">
               Gift Sets
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brass transition-all duration-300 group-hover:w-full"></span>
-            </Link>
+            </Link> */}
             <Link to="/our-heritage" className="text-foreground hover:text-primary transition-colors font-medium relative group">
               Our Heritage
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -109,7 +109,7 @@ const Navigation = () => {
               <Link to="/copper-collection" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Copper Collection</Link>
               <Link to="/brass-essentials" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Brass Essentials</Link>
               <Link to="/steel-essentials" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Steel Essentials</Link>
-              <Link to="/gift-sets" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Gift Sets</Link>
+              {/* <Link to="/gift-sets" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Gift Sets</Link> */}
               <Link to="/our-heritage" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Our Heritage</Link>
             </nav>
             <div className="mt-8 flex flex-col space-y-3">
