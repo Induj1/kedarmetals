@@ -64,6 +64,16 @@ const Navigation = () => {
               Our Heritage
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brass transition-all duration-300 group-hover:w-full"></span>
             </Link>
+            {/* Temporary festive links */}
+            <Link to="/dhanteras-sale" className="text-foreground hover:text-primary transition-colors font-medium relative group">
+              Dhanteras Sale
+            </Link>
+            <Link to="/utensils-collection" className="text-foreground hover:text-primary transition-colors font-medium relative group">
+              Utensils Collection
+            </Link>
+            <Link to="/jewellery-collection" className="text-foreground hover:text-primary transition-colors font-medium relative group">
+              Jewellery Collection
+            </Link>
           </div>
 
           {/* Action buttons */}
@@ -111,6 +121,9 @@ const Navigation = () => {
               <Link to="/steel-essentials" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Steel Essentials</Link>
               {/* <Link to="/gift-sets" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Gift Sets</Link> */}
               <Link to="/our-heritage" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Our Heritage</Link>
+              <Link to="/dhanteras-sale" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Dhanteras Sale</Link>
+              <Link to="/utensils-collection" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Utensils Collection</Link>
+              <Link to="/jewellery-collection" onClick={() => setSidebarOpen(false)} className="text-lg font-semibold text-maroon">Jewellery Collection</Link>
             </nav>
             <div className="mt-8 flex flex-col space-y-3">
               <a href="https://wa.me/919569406171" target="_blank" rel="noopener noreferrer" className="w-full border-2 border-green-500 text-green-700 hover:bg-green-50 hover:border-green-600 font-semibold rounded-lg py-2 flex items-center justify-center gap-2">

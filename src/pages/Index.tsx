@@ -11,13 +11,19 @@ import OfferBanner from "@/components/OfferBanner";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import FestiveStrip from "@/components/FestiveStrip";
+import DhanterasBanner from "@/components/DhanterasBanner";
+import DhanterasProducts from "@/components/DhanterasProducts";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+      <FestiveStrip />
+      <DhanterasBanner />
       <HeroSection />
       <OfferBanner />
+      <DhanterasProducts />
       <FeaturedCategories />
       <TopProducts />
       <USPSection />

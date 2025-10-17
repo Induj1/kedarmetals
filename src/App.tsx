@@ -10,6 +10,10 @@ import GiftSets from "./pages/GiftSets";
 import OurHeritage from "./pages/OurHeritage";
 import NotFound from "./pages/NotFound";
 import SteelEssentials from "./pages/SteelEssentials";
+import DhanterasSale from "./pages/DhanterasSale";
+import UtensilsCollection from "./pages/UtensilsCollection";
+import JewelleryCollection from "./pages/JewelleryCollection";
+import Products from "./pages/Products";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +28,10 @@ const App = () => (
           <Route path="/copper-collection" element={<CopperCollection />} />
           <Route path="/brass-essentials" element={<BrassEssentials />} />
           <Route path="/steel-essentials" element={<SteelEssentials />} />
+          <Route path="/dhanteras-sale" element={<DhanterasSale />} />
+          <Route path="/utensils-collection" element={<UtensilsCollection />} />
+          <Route path="/jewellery-collection" element={<JewelleryCollection />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/gift-sets" element={<GiftSets />} />
           <Route path="/our-heritage" element={<OurHeritage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

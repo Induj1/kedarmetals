@@ -128,6 +128,20 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        
+        {/* Festive contact & trust strip */}
+        <div className="mt-6 bg-ivory/95 rounded-lg p-4 text-maroon flex flex-col md:flex-row items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <div className="font-semibold">📞 Mr. Kedar Gupta – 94150 72987</div>
+            <div className="font-medium">📍 515 Lalbagh Sabzi Mandi, Sitapur</div>
+            <div className="font-medium">🌐 www.kedarmetal.store</div>
+          </div>
+          <div className="mt-3 md:mt-0 flex items-center space-x-4 text-sm">
+            <span className="bg-brass text-maroon px-3 py-1 rounded">🪔 Since 1970</span>
+            <span className="bg-green-100 text-green-800 px-3 py-1 rounded">✅ Genuine Quality</span>
+            <span className="bg-blue-50 text-blue-800 px-3 py-1 rounded">📦 All India Delivery</span>
+          </div>
+        </div>
       </div>
     </footer>
   );

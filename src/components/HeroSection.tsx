@@ -67,17 +67,17 @@ const HeroSection = () => {
           {/* CTA buttons with enhanced design */}
           <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
             <Link to="/copper-collection">
-              <Button size="lg" className="heritage-button px-8 py-6 text-xl shadow-2xl text-xl font-bold bg-copper hover:bg-copper/90">
+              <Button size="lg" className="heritage-button px-8 py-6 text-xl shadow-2xl font-bold bg-copper hover:bg-copper/90">
                 🔴 Buy Copper Collection
               </Button>
             </Link>
             <Link to="/brass-essentials">
-              <Button size="lg" className="heritage-button px-8 py-6 text-xl shadow-2xl text-xl font-bold bg-brass hover:bg-brass/90">
+              <Button size="lg" className="heritage-button px-8 py-6 text-xl shadow-2xl font-bold bg-brass hover:bg-brass/90">
                 🟡 Buy Brass Essentials
               </Button>
             </Link>
             <Link to="/steel-essentials">
-              <Button size="lg" className="heritage-button px-8 py-6 text-xl shadow-2xl text-xl font-bold bg-maroon hover:bg-maroon/90">
+              <Button size="lg" className="heritage-button px-8 py-6 text-xl shadow-2xl font-bold bg-maroon hover:bg-maroon/90">
                 ⚪ Buy Steel Essentials
               </Button>
             </Link>
